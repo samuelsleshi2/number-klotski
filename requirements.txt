@@ -1,0 +1,5 @@
+rfdetr==1.7.1
+supervision==0.28.0
+pyvirtualcam==0.15.0
+opencv-python==4.13.0.92
+pillow==12.2.0
