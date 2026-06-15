@@ -6,12 +6,7 @@ each frame, draws boxes and labels for the board, the empty slot, and tiles 1–
 and pushes the annotated frame to a virtual camera you can use in Zoom, OBS, etc.
 
 ## Demo
-
-<!-- TODO: replace with your own clip or screenshot.
-     - GIF or screenshot: ![demo](docs/demo.gif)
-     - MP4: drag the file into a GitHub release/issue and paste the URL GitHub gives you. -->
-
-![demo](docs/demo.gif)
+<img width="1920" height="1080" alt="Screenshot 2026-06-15 12-21-54" src="https://github.com/user-attachments/assets/cffcf5d9-2423-4b42-b036-abd565e52bb5" />
 
 ## Classes
 
@@ -32,10 +27,9 @@ and pushes the annotated frame to a virtual camera you can use in Zoom, OBS, etc
 
 ```bash
 python -m venv klotski-detection-venv
-# Windows
-klotski-detection-venv\Scripts\activate
-# macOS/Linux
-source klotski-detection-venv/bin/activate
+
+klotski-detection-venv\Scripts\activate # Windows
+source klotski-detection-venv/bin/activate # macOS/Linux
 
 pip install -r requirements.txt
 ```
@@ -49,12 +43,12 @@ The trained weights aren't in the repo (the checkpoint is ~127 MB). Download
 content/output/checkpoint_best_total.pth
 ```
 
-Download it from the [latest release](../../releases/latest) and drop it into
+Download it from the [weights release](../../releases/tag/weights-v1) and drop it into
 that path.
 
 If you'd rather train your own, the dataset was annotated and exported from
 Roboflow and the model was trained with RF-DETR Small for 50 epochs. See
-[`content/output/training_config.json`](content/output/training_config.json) for
+[the config release](../../releases/tag/training-config-v1) for
 the full configuration.
 
 ## Run
