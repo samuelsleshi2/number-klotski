@@ -49,12 +49,13 @@ The trained weights aren't in the repo (the checkpoint is ~127 MB). Download
 content/output/checkpoint_best_total.pth
 ```
 
-Download it from the [latest release](../../releases) and drop it into
+Download it from the [weights release](../../releases/tag/weights-v1) and drop it into
 that path.
 
 If you'd rather train your own, the dataset was annotated and exported from
-Roboflow and the model was trained with RF-DETR Small for 50 epochs. See the
-[training configuration](../../releases) for the full configuration.
+Roboflow and the model was trained with RF-DETR Small for 50 epochs. See
+[`content/output/training_config.json`](../../releases/tag/training-config-v1) for
+the full configuration.
 
 ## Run
 
