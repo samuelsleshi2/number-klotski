@@ -5,7 +5,6 @@ from PIL import Image
 from rfdetr import RFDETRSmall
 
 def stream(cap):
-
     CHECKPOINT_PATH = r"content\output\checkpoint_best_total.pth"
 
     CLASS_NAMES = [
@@ -47,6 +46,5 @@ def stream(cap):
             annotated_frame = box_annotator.annotate(annotated_frame, detections)
             annotated_frame = label_annotator.annotate(annotated_frame, detections, labels)
 
-            print(f"Sending frames to: {cam.device}")
             cam.send(annotated_frame)
             cam.sleep_until_next_frame()
